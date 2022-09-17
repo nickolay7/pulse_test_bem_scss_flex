@@ -79,7 +79,7 @@ document.addEventListener('click', (e) => {
 
 // close
 document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('modal__close') || e.target.dataset.close === "x") {
+  if (e.target.classList.contains('modal__close') || e.target.dataset.close === "x" || e.target.classList.contains('overlay')) {
     hide(orderModal);
     hide(consultationModal);
   }
